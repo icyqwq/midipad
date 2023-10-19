@@ -1,0 +1,27 @@
+name: build
+
+on:
+  push:
+    branches:
+    - master
+    - release/*
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-20.04
+    
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Build
+      run: make -C tests
+
+    - name: Run tests
+      run: make -C tests test
+
+    - name: Get coverage results
+      run: make -C tests coverage

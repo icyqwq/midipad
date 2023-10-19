@@ -1,0 +1,463 @@
+Executing action: app-flash
+Serial port /dev/ttyACM0
+Connecting...[1/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cpp.obj
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:11:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/servo.hpp:8:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "SERVO";
+                               ^~~~~~~
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:12:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/camera.hpp:9:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "CAMERA";
+                               ^~~~~~~~
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:15:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/gpt.hpp:10:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "GPT";
+                               ^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/gpt.hpp:11:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* serverName = "https://api.openai.com/v1/chat/completions";
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:16:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:10:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "Whisper";
+                               ^~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:11:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* serverName = "https://api.openai.com/v1/audio/transcriptions";
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp: In member function 'int Whisper::sendRequest(const char*, uint8_t*, size_t)':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:69:10: warning: unused variable 'sent_bytes' [-Wunused-variable]
+   size_t sent_bytes = 0, sent = 0;
+          ^~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:69:26: warning: unused variable 'sent' [-Wunused-variable]
+   size_t sent_bytes = 0, sent = 0;
+                          ^~~~
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:17:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/google_tts.hpp: At global scope:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/google_tts.hpp:13:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "GoogleTTS";
+                               ^~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/google_tts.hpp:14:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* serverName = "https://texttospeech.googleapis.com/v1/text:synthesize?key=";
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp: In function 'void record_test(void*)':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:36:9: warning: unused variable 'recv_len' [-Wunused-variable]
+     int recv_len = 0;
+         ^~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:37:6: warning: unused variable 'is_active' [-Wunused-variable]
+  int is_active = 0;
+      ^~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:38:9: warning: unused variable 'last_active' [-Wunused-variable]
+     int last_active = 0;
+         ^~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:39:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:41:10: warning: unused variable 'data_del' [-Wunused-variable]
+  int16_t data_del[FRAME_SIZE];
+          ^~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:58:14: warning: unused variable 'sum' [-Wunused-variable]
+     uint64_t sum = 0;
+              ^~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp: In function 'void servo_test()':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:91:12: warning: unused variable 'index' [-Wunused-variable]
+     int8_t index = 0;
+            ^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:92:12: warning: unused variable 'found_dynamixel' [-Wunused-variable]
+     int8_t found_dynamixel = 0;
+            ^~~~~~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp: In function 'void face_test()':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:162:14: warning: unused variable 'frame_count' [-Wunused-variable]
+     uint32_t frame_count = 0;
+              ^~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp: In function 'void neopixel_init()':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:222:29: warning: missing initializer for member 'rmt_tx_config_t::loop_count' [-Wmissing-field-initializers]
+                            }};
+                             ^
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp: At global scope:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:204:16: warning: 'color_select' defined but not used [-Wunused-variable]
+ static uint8_t color_select = 0;
+                ^~~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:203:17: warning: 'blue' defined but not used [-Wunused-variable]
+ static uint16_t blue = 0;
+                 ^~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:202:17: warning: 'green' defined but not used [-Wunused-variable]
+ static uint16_t green = 0;
+                 ^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/main.cpp:201:17: warning: 'red' defined but not used [-Wunused-variable]
+ static uint16_t red = 0;
+                 ^~~
+[2/8] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/sr/app_sr_handler.cpp.obj
+In file included from /home/icy/esp/esp-idf-v4.4.5/components/vfs/include/esp_vfs.h:22,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/file_manager.h:20,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:13:
+/home/icy/esp/esp-idf-v4.4.5/components/newlib/platform_include/sys/termios.h:97: warning: "B110" redefined
+ #define B110        3
+ 
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/arduino/cores/esp32/Arduino.h:41,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/../esp32/../../misc/DataWrapper.hpp:21,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/../esp32/common.hpp:20,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/../common.hpp:22,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/Bus_SPI.hpp:57,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/device.hpp:42,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/M5GFX.h:18,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5Unified/src/M5Unified.hpp:19,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5Unified/src/M5Unified.h:5,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:6:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/components/arduino/cores/esp32/binary.h:65: note: this is the location of the previous definition
+ #define B110 6
+ 
+In file included from /home/icy/esp/esp-idf-v4.4.5/components/vfs/include/esp_vfs.h:22,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/file_manager.h:20,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:13:
+/home/icy/esp/esp-idf-v4.4.5/components/newlib/platform_include/sys/termios.h:118: warning: "B1000000" redefined
+ #define B1000000   23
+ 
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/arduino/cores/esp32/Arduino.h:41,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/../esp32/../../misc/DataWrapper.hpp:21,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/../esp32/common.hpp:20,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/../common.hpp:22,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/esp32/Bus_SPI.hpp:57,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/lgfx/v1/platforms/device.hpp:42,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5GFX/src/M5GFX.h:18,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5Unified/src/M5Unified.hpp:19,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/components/M5Unified/src/M5Unified.h:5,
+                 from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:6:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/components/arduino/cores/esp32/binary.h:277: note: this is the location of the previous definition
+ #define B1000000 64
+ 
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:20:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/gpt.hpp:10:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "GPT";
+                               ^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/gpt.hpp:11:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* serverName = "https://api.openai.com/v1/chat/completions";
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:21:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:10:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "Whisper";
+                               ^~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:11:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* serverName = "https://api.openai.com/v1/audio/transcriptions";
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp: In member function 'int Whisper::sendRequest(const char*, uint8_t*, size_t)':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:69:10: warning: unused variable 'sent_bytes' [-Wunused-variable]
+   size_t sent_bytes = 0, sent = 0;
+          ^~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/whisper.hpp:69:26: warning: unused variable 'sent' [-Wunused-variable]
+   size_t sent_bytes = 0, sent = 0;
+                          ^~~~
+In file included from /home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:22:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/google_tts.hpp: At global scope:
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/google_tts.hpp:13:31: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* TAG = "GoogleTTS";
+                               ^~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/api/google_tts.hpp:14:38: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+  static constexpr char* serverName = "https://texttospeech.googleapis.com/v1/text:synthesize?key=";
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp: In function 'void generate_wav_header(char*, uint32_t, uint32_t, uint8_t)':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:74:5: warning: narrowing conversion of 'file_size' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+     };
+     ^
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:62:30: warning: narrowing conversion of '(file_size >> 8)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         file_size, file_size >> 8, file_size >> 16, file_size >> 24, // ChunkSize
+                    ~~~~~~~~~~^~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:62:46: warning: narrowing conversion of '(file_size >> 16)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         file_size, file_size >> 8, file_size >> 16, file_size >> 24, // ChunkSize
+                                    ~~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:62:63: warning: narrowing conversion of '(file_size >> 24)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         file_size, file_size >> 8, file_size >> 16, file_size >> 24, // ChunkSize
+                                                     ~~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:74:5: warning: narrowing conversion of 'sample_rate' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+     };
+     ^
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:68:34: warning: narrowing conversion of '(sample_rate >> 8)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         sample_rate, sample_rate >> 8, sample_rate >> 16, sample_rate >> 24, // SampleRate
+                      ~~~~~~~~~~~~^~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:68:52: warning: narrowing conversion of '(sample_rate >> 16)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         sample_rate, sample_rate >> 8, sample_rate >> 16, sample_rate >> 24, // SampleRate
+                                        ~~~~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:68:71: warning: narrowing conversion of '(sample_rate >> 24)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         sample_rate, sample_rate >> 8, sample_rate >> 16, sample_rate >> 24, // SampleRate
+                                                           ~~~~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:74:5: warning: narrowing conversion of 'byte_rate' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+     };
+     ^
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:69:30: warning: narrowing conversion of '(byte_rate >> 8)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         byte_rate, byte_rate >> 8, byte_rate >> 16, byte_rate >> 24, // ByteRate
+                    ~~~~~~~~~~^~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:69:46: warning: narrowing conversion of '(byte_rate >> 16)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         byte_rate, byte_rate >> 8, byte_rate >> 16, byte_rate >> 24, // ByteRate
+                                    ~~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:69:63: warning: narrowing conversion of '(byte_rate >> 24)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         byte_rate, byte_rate >> 8, byte_rate >> 16, byte_rate >> 24, // ByteRate
+                                                     ~~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:74:5: warning: narrowing conversion of 'wav_size' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+     };
+     ^
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:73:28: warning: narrowing conversion of '(wav_size >> 8)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         wav_size, wav_size >> 8, wav_size >> 16, wav_size >> 24, // Subchunk2Size
+                   ~~~~~~~~~^~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:73:43: warning: narrowing conversion of '(wav_size >> 16)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         wav_size, wav_size >> 8, wav_size >> 16, wav_size >> 24, // Subchunk2Size
+                                  ~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:73:59: warning: narrowing conversion of '(wav_size >> 24)' from 'uint32_t' {aka 'unsigned int'} to 'char' inside { } [-Wnarrowing]
+         wav_size, wav_size >> 8, wav_size >> 16, wav_size >> 24, // Subchunk2Size
+                                                  ~~~~~~~~~^~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp: In function 'void sr_handler_task(void*)':
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:198:14: warning: unused variable 'audio_file' [-Wunused-variable]
+         char audio_file[48] = {0};
+              ^~~~~~~~~~
+/home/icy/esp/prj/M5CoreS3-idf-project-template/main/sr/app_sr_handler.cpp:187:26: warning: unused variable 'last_player_state' [-Wunused-variable]
+     audio_player_state_t last_player_state = AUDIO_PLAYER_STATE_IDLE;
+                          ^~~~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable M5CoreS3-idf-project-template.elf
+[6/8] Generating binary image from built executable
+esptool.py v3.3.4-dev
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/icy/esp/prj/M5CoreS3-idf-project-template/build/M5CoreS3-idf-project-template.bin
+[7/8] cd /home/icy/esp/prj/M5CoreS3-idf-project-template/build/esp-idf/esptool_py && /home/icy/.espressif-v4.4.5/python_env/idf4.4_py3.10_env/bin/python /home/icy/esp/esp-idf-v4.4.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/icy/esp/prj/M5CoreS3-idf-project-template/build/partition_table/partition-table.bin /home/icy/esp/prj/M5CoreS3-idf-project-template/build/M5CoreS3-idf-project-template.bin
+M5CoreS3-idf-project-template.bin binary size 0x178c40 bytes. Smallest app partition is 0x500000 bytes. 0x3873c0 bytes (71%) free.
+[7/8] cd /home/icy/esp/esp-idf-v4.4.5/components/esptool_py && /usr/bin/cmake -D IDF_PATH="/home/icy/esp/esp-idf-v4.4.5" -D SERIAL_TOOL="/home/icy/.espressif-v4.4.5/python_env/idf4.4_py3.10_env/bin/python /home/icy/esp/esp-idf-v4.4.5/components/esptool_py/esptool/esptool.py --chip esp32s3" -D SERIAL_TOOL_ARGS="--before=default_reset --after=hard_reset write_flash @app-flash_args" -D WORKING_DIRECTORY="/home/icy/esp/prj/M5CoreS3-idf-project-template/build" -P /home/icy/esp/esp-idf-v4.4.5/components/esptool_py/run_serial_tool.cmake
+esptool.py esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x20000 M5CoreS3-idf-project-template.bin
+esptool.py v3.3.4-dev
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+MAC: 48:27:e2:66:c2:8c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00020000 to 0x00198fff...
+Compressed 1543232 bytes to 1025982...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002adc4... (3 %)
+Writing at 0x000313ac... (4 %)
+Writing at 0x0003575a... (6 %)
+Writing at 0x00039bf4... (7 %)
+Writing at 0x0003e796... (9 %)
+Writing at 0x000433df... (11 %)
+Writing at 0x00048033... (12 %)
+Writing at 0x0004cbb6... (14 %)
+Writing at 0x000518b5... (15 %)
+Writing at 0x00056457... (17 %)
+Writing at 0x0005a821... (19 %)
+Writing at 0x0005ec78... (20 %)
+Writing at 0x00063054... (22 %)
+Writing at 0x00067257... (23 %)
+Writing at 0x0006b5b1... (25 %)
+Writing at 0x0006f8a2... (26 %)
+Writing at 0x00078aa5... (28 %)
+Writing at 0x000845c3... (30 %)
+Writing at 0x0008f400... (31 %)
+Writing at 0x000a17f6... (33 %)
+Writing at 0x000a74f2... (34 %)
+Writing at 0x000acaa5... (36 %)
+Writing at 0x000b20b4... (38 %)
+Writing at 0x000b7d7b... (39 %)
+Writing at 0x000bd915... (41 %)
+Writing at 0x000c2dd0... (42 %)
+Writing at 0x000c8109... (44 %)
+Writing at 0x000cdb31... (46 %)
+Writing at 0x000d387d... (47 %)
+Writing at 0x000d935b... (49 %)
+Writing at 0x000deb75... (50 %)
+Writing at 0x000e4bb8... (52 %)
+Writing at 0x000e9dda... (53 %)
+Writing at 0x000eeddc... (55 %)
+Writing at 0x000f3dbd... (57 %)
+Writing at 0x000f8cc2... (58 %)
+Writing at 0x000fdcc4... (60 %)
+Writing at 0x00102d01... (61 %)
+Writing at 0x00107d77... (63 %)
+Writing at 0x0010d65d... (65 %)
+Writing at 0x00112a5e... (66 %)
+Writing at 0x00117dac... (68 %)
+Writing at 0x0011ccfa... (69 %)
+Writing at 0x00121f5f... (71 %)
+Writing at 0x00126e57... (73 %)
+Writing at 0x0012c2c3... (74 %)
+Writing at 0x0013176c... (76 %)
+Writing at 0x00137446... (77 %)
+Writing at 0x0013c59f... (79 %)
+Writing at 0x00141b59... (80 %)
+Writing at 0x00148255... (82 %)
+Writing at 0x0014fb1b... (84 %)
+Writing at 0x00159626... (85 %)
+Writing at 0x001603fb... (87 %)
+Writing at 0x001663cd... (88 %)
+Writing at 0x0016e5b9... (90 %)
+Writing at 0x00174bf3... (92 %)
+Writing at 0x0017d894... (93 %)
+Writing at 0x00184bdd... (95 %)
+Writing at 0x00189fc9... (96 %)
+Writing at 0x0018f7ef... (98 %)
+Writing at 0x00195423... (100 %)
+Wrote 1543232 bytes (1025982 compressed) at 0x00020000 in 14.2 seconds (effective 870.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+
+Detecting chip type... ESP32-S3
+Running ninja in directory /home/icy/esp/prj/M5CoreS3-idf-project-template/build
+Executing "ninja app-flash"...
+Executing action: monitor
+Serial port /dev/ttyACM0
+Connecting...ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3808,len:0x162c
+load:0x403c9700,len:0xbcc
+load:0x403cc700,len:0x3024
+entry 0x403c9954
+[0;32mI (18) boot: ESP-IDF v4.4.5 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time 11:28:41[0m
+[0;32mI (18) boot: chip revision: v0.2[0m
+[0;32mI (20) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (25) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 nvs_key          NVS keys         01 04 0000f000 00001000[0m
+[0;32mI (66) boot:  2 phy_init         RF data          01 01 00010000 00001000[0m
+[0;32mI (73) boot:  3 otadata          OTA data         01 00 00011000 00002000[0m
+[0;32mI (80) boot:  4 ota_0            OTA app          00 10 00020000 00500000[0m
+[0;32mI (88) boot:  5 storage          Unknown data     01 82 00520000 00300000[0m
+[0;32mI (95) boot:  6 model            Unknown data     01 82 00820000 00600000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) esp_image: segment 0: paddr=00020020 vaddr=3c0f0020 size=7c984h (510340) map[0m
+[0;32mI (207) esp_image: segment 1: paddr=0009c9ac vaddr=3fc9cb20 size=0366ch ( 13932) load[0m
+[0;32mI (210) esp_image: segment 2: paddr=000a0020 vaddr=42000020 size=e34e0h (931040) map[0m
+[0;32mI (380) esp_image: segment 3: paddr=00183508 vaddr=3fca018c size=00be4h (  3044) load[0m
+[0;32mI (381) esp_image: segment 4: paddr=001840f4 vaddr=40378000 size=14b20h ( 84768) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (413) boot: Disabling RNG early entropy source...[0m
+[0;32mI (424) spiram: Found 64MBit SPI RAM device[0m
+[0;32mI (424) spiram: SPI RAM mode: sram 80m[0m
+[0;32mI (425) spiram: PSRAM initialized, cache is in normal (1-core) mode.[0m
+[0;32mI (429) cpu_start: Pro cpu up.[0m
+[0;32mI (433) cpu_start: Starting app cpu, entry point is 0x4037953c[0m
+[0;[30;322mmI I ((4400) ) csppui_rsatm: aIrtns: tArpupc tcipou su pcop.ie[d0 man
+ mapped to SPIRAM[0m
+[0;32mI (576) spiram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (649) cpu_start: Pro cpu start user code[0m
+[0;32mI (649) cpu_start: cpu freq: 240000000[0m
+[0;32mI (649) cpu_start: Application information:[0m
+[0;32mI (651) cpu_start: Project name:     M5CoreS3-idf-project-template[0m
+[0;32mI (658) cpu_start: App version:      1[0m
+[0;32mI (663) cpu_start: Compile time:     Sep 14 2023 10:29:37[0m
+[0;32mI (669) cpu_start: ELF file SHA256:  58627b1e8886cc61...[0m
+[0;32mI (675) cpu_start: ESP-IDF:          v4.4.5[0m
+[0;32mI (680) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (684) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (689) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (694) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (701) heap_init: At 3FCACF98 len 0003C778 (241 KiB): D/IRAM[0m
+[0;32mI (707) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DIRAM[0m
+[0;32mI (714) heap_init: At 600FE000 len 00002000 (8 KiB): RTCRAM[0m
+[0;32mI (721) spiram: Adding pool of 6720K of external SPI memory to heap allocator[0m
+[0;32mI (729) spi_flash: detected chip: generic[0m
+[0;32mI (733) spi_flash: flash io: dio[0m
+[0;32mI (741) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (744) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (751) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (766) spiram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (778) M5GFX: [Autodetect] load from NVS : board:10[0m
+[0;32mI (783) gpio: GPIO[36]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (790) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (799) gpio: GPIO[37]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;33mW (809) M5GFX: [Autodetect] board_M5StackCoreS3[0m
+[0;32mI (814) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (823) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (832) gpio: GPIO[37]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[36]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (851) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (860) gpio: GPIO[37]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1041) uart: queue free spaces: 20[0m
+[0;32mI (1262) MAIN: 
+
+HELLO
+
+[0m
+[0;32mI (1262) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1270) MAIN: SD Card: 3, 29544 MiB[0m
+[0;32mI (1284) pp: pp rom version: e7ae62f[0m
+[0;32mI (1284) net80211: net80211 rom version: e7ae62f[0m
+I (1285) wifi:wifi driver task: 3fcb5eb4, prio:23, stack:6656, core=0
+[0;32mI (1289) system_api: Base MAC address is not set[0m
+[0;32mI (1294) system_api: read default base MAC address from EFUSE[0m
+I (1303) wifi:wifi firmware version: 0f80fa0
+I (1304) wifi:wifi certification version: v7.0
+I (1308) wifi:config NVS flash: enabled
+I (1312) wifi:config nano formating: disabled
+I (1316) wifi:Init data frame dynamic rx buffer num: 32
+I (1321) wifi:Init management frame dynamic rx buffer num: 32
+I (1326) wifi:Init management short buffer num: 32
+I (1331) wifi:Init dynamic tx buffer num: 32
+I (1335) wifi:Init tx cache buffer num: 4
+I (1339) wifi:Init static tx FG buffer num: 2
+I (1343) wifi:Init static rx buffer size: 1600
+I (1347) wifi:Init static rx buffer num: 4
+I (1351) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1355) wifi_init: rx ba win: 6[0m
+[0;32mI (1359) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1363) wifi_init: udp mbox: 6[0m
+[0;32mI (1366) wifi_init: tcp mbox: 6[0m
+[0;32mI (1370) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1375) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1379) wifi_init: tcp mss: 1440[0m
+[0;32mI (1383) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1387) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1393) phy_init: phy_version 601,fe52df4,May 10 2023,17:26:54[0m
+I (1432) wifi:mode : sta (48:27:e2:66:c2:8c)
+I (1433) wifi:enable tsf
+I (1433) wifi:Set ps type: 1
+
+I (1444) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (2200) wifi:state: init -> auth (b0)
+I (2274) wifi:state: auth -> assoc (0)
+I (2277) wifi:state: assoc -> run (10)
+I (2316) wifi:connected with Real-Internet, aid = 1, channel 1, BW20, bssid = 94:83:c4:31:33:48
+I (2317) wifi:security: WPA2-PSK, phy: bgn, rssi: -31
+I (2320) wifi:pm start, type: 1
+
+I (2322) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 0, mt_pti: 25000, mt_time: 10000
+I (2418) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (2849) wifi:<ba-add>idx:0 (ifx:0, 94:83:c4:31:33:48), tid:7, ssn:0, winSize:64
+I (2949) wifi:<ba-add>idx:1 (ifx:0, 94:83:c4:31:33:48), tid:0, ssn:0, winSize:64
+[0;32mI (3831) esp_netif_handlers: sta ip: 192.168.8.161, mask: 255.255.255.0, gw: 192.168.8.1[0m
+size = 67244
+[0;32mI (4486) I2S: DMA Malloc info, datalen=blocksize=512, dma_buf_count=8[0m
+[0;32mI (4587) MAIN: GPT Test started[0m
+[0;32mI (4587) GoogleTTS: Request JSON: {"input":{"text":"等于2"},"voice":{"languageCode":"cmn-CN","name":"cmn-CN-Wavenet-A","ssmlGender":"FEMALE"},"audioConfig":{"audioEncoding":"LINEAR16","sampleRateHertz":16000}}[0m
+[0;32mI (5712) wav: RIFF           : RIFF[0m
+[0;32mI (5713) wav: chunk_size     : 29944[0m
+[0;32mI (5713) wav: WAVEfmt        : WAVEfmt [0m
+[0;32mI (5715) wav: fmt_chunk_size : 16[0m
+[0;32mI (5718) wav: audiofmt       : 1[0m
+[0;32mI (5722) wav: channel        : 1[0m
+[0;32mI (5726) wav: sample_rate    : 16000[0m
+[0;32mI (5731) wav: byte_per_sec   : 32000[0m
+[0;32mI (5735) wav: block_size     : 2[0m
+[0;32mI (5739) wav: bit_per_sample : 16[0m
+[0;32mI (7005) GoogleTTS: wav size = 29971 bytes
+[0m
+
+Detecting chip type... ESP32-S3
+Running idf_monitor in directory /home/icy/esp/prj/M5CoreS3-idf-project-template
+Executing "/home/icy/.espressif-v4.4.5/python_env/idf4.4_py3.10_env/bin/python /home/icy/esp/esp-idf-v4.4.5/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 /home/icy/esp/prj/M5CoreS3-idf-project-template/build/M5CoreS3-idf-project-template.elf -m '/home/icy/.espressif-v4.4.5/python_env/idf4.4_py3.10_env/bin/python' '/home/icy/esp/esp-idf-v4.4.5/tools/idf.py'"...
+Done

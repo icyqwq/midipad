@@ -1,0 +1,10 @@
+.vscode
+build
+sdkconfig
+*.old
+*~
+*.out*
+*.gc*
+perf.data*
+/docs/xml
+/docs/html
